@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      body{
+        background-color: black;
+      }
+    </style>
+ <body>
+    
+     
+     <main>
+         
+         <div id="myCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+      {{>navbar}}
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img src="./images/wp1.jpg" class="img-fluid" height="vh-50 " width="vw-50 " alt="">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Welcome,{{naam}}</h1>
+            <p>Hello, {{naam}} Welcome to our home page</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/wp2.jpg" class="img-fluid" height="vh-50 " width="vw-50 " alt="">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Welcome,{{naam}}</h1>
+            <p>Hello, {{naam}} Welcome to our home page</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/wp3.jpg" class="img-fluid" height="vh-50 " width="vw-50 " alt="">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Welcome,{{naam}}</h1>
+            <p>Hello, {{naam}} Welcome to our home page</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./images/h1.jpg" class="img-fluid h-25 w-25 rounded-circle"  alt="">
+
+        <h2>react</h2>
+        <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+        <p><a class="btn btn-secondary" href="https://reactjs.org/">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./images/h2.jpg" class="img-fluid h-25 w-25 rounded-circle"  alt="">
+
+        <h2>node.js</h2>
+        <p>Node. js is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It's used for traditional web sites and back-end API services, but was designed with real-time, push-based architectures in mind.</p>
+        <p><a class="btn btn-secondary" href="https://nodejs.org/en/">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./images/h3.jpg" class="img-fluid h-25 w-25 rounded-circle"  alt="">
+
+        <h2>JavaScript</h2>
+        <p>JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. JavaScript is easy to learn.</p>
+        <p><a class="btn btn-secondary" href="https://www.w3schools.com/js/">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">MERN ,<span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">MERN is one of several variations of the MEAN stack (MongoDB Express Angular Node), where the traditional Angular.js front-end framework is replaced with React.js. Other variants include MEVN (MongoDB, Express, Vue, Node), and really any front-end JavaScript framework can work.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./images/wp2.jpg" class="img-fluid" alt="">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">React, <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">React is a JavaScript library developed by Facebook which, among other things, was used to build Instagram.com. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React. js is virtual DOM.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./images/wp1.jpg" class="img-fluid" alt="">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Django, <span class="text-muted"> this one.</span></h2>
+        <p class="lead">Django framework assists in developing quality web applications. It is among the best python frameworks and is used for the quick development of APIs and web applications.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./images/wp3.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+</html>
